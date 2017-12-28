@@ -1,0 +1,74 @@
+.myContainer{
+    display: flex;
+}
+
+.desk-nav:hover {
+    width: 300px;
+}
+
+a {
+    color: orangered;
+}
+.mob-nav{
+    text-align: center;
+    background-color: green;
+}
+.desk-nav{
+
+    height: 200px;
+    box-shadow: 10px 10px 5px #1a4e57;
+    width: 200px;
+    background-color: #66ccff;
+}
+
+.content{
+
+    flex:3;
+    background-color: antiquewhite;
+}
+
+.action-bar{
+
+    flex:1;
+    background: linear-gradient(-90deg, cadetblue, white);
+}
+
+
+@keyframes anim {
+    from {
+        background-color: #98AFC7;
+    }
+    to
+    {
+        background-color: darkred;
+    }
+}
+
+@media only screen and (max-width : 568px) {
+
+    .myContainer {
+        flex-flow: column wrap;
+    }
+    .mob-nav {
+        display: block;
+    }
+    .desk-nav {
+        display: none;
+    }
+
+}
+
+
+@media only screen and (min-width : 568px) {
+
+    .myContainer {
+        flex-flow: row wrap;
+    }
+    .mob-nav {
+        display: none;
+    }
+    .desk-nav {
+        display: block;
+    }
+
+}
